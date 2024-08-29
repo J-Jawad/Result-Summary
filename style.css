@@ -1,0 +1,237 @@
+/* css reset by josh comeau */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+g,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Colors */
+
+:root {
+  /* ### Primary */
+
+  --LightRed: hsl(0, 100%, 67%);
+  --LightRedOpaque: hsla(0, 100%, 67%, 0.05);
+  --OrangeyYellow: hsl(39, 100%, 56%);
+  --OrangeyYellowOpaque: hsla(39, 100%, 56%, 0.05);
+  --GreenTeal: hsl(166, 100%, 37%);
+  --GreenTealOpaque: hsla(166, 100%, 37%, 0.05);
+  --CobaltBlue: hsl(234, 85%, 45%);
+  --CobaltBlueOpaque: hsla(234, 85%, 45%, 0.05);
+
+  /* ## Gradients */
+
+  --Lightslateblue: hsl(252, 100%, 67%);
+  --Lightroyalblue: hsl(241, 81%, 54%);
+
+  /* Circle */
+
+  --Violetblue: hsla(256, 72%, 46%, 1);
+  --Persianblue: hsla(241, 72%, 46%, 0);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Paleblue: hsl(221, 100%, 96%);
+  --Lightlavender: hsl(241, 100%, 89%);
+  --Darkgrayblue: hsl(224, 30%, 27%);
+}
+
+/* Provided styles */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* setting font */
+
+body{
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: var(--White);
+}
+
+main{
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+}
+
+.resultCard{
+    background-image: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
+   
+    color: var(--White);
+    border-bottom-left-radius: 1.5rem; 
+    border-bottom-right-radius: 1.5rem; 
+    padding: 1.5rem 2rem 2.5rem;
+}
+
+.circle{
+    background-image: linear-gradient(to bottom, var(--Violetblue), var(--Persianblue));
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.flexDefault{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bigNumber{
+    font-size: 50px;
+}
+
+.fullGrade{
+    font-size: 0.9rem;
+    color: hsla(0, 0%, 100%, 0.5);
+    color: hsla;
+}
+
+.lightTitle{
+    color: hsla(0, 0%, 100%, 0.65);
+    font-size: 1.2rem;
+}
+
+.gradeDescription{
+    font-size: 0.8em;
+    text-align: center;
+    width: 80%;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.summaryCard{
+    padding: 1.5rem;
+}
+
+.darkTitle{
+    font-size: 1.1rem;
+}
+
+.flexContainer{
+
+}
+
+.flexCard{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem 0.2rem;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+
+.red{
+    background-color: var(--LightRedOpaque);
+}
+
+.yellow{
+    background-color: var(--OrangeyYellowOpaque);
+}
+
+.green{
+    background-color: var(--GreenTealOpaque);
+}
+
+.blue{
+    background-color: var(--CobaltBlueOpaque);
+}
+
+h4{
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.red h4{
+    color: var(--LightRed);
+}
+.yellow h4{
+    color: var(--OrangeyYellow);
+}
+.green h4{
+    color: var(--GreenTeal);
+}
+.blue h4{
+    color: var(--CobaltBlue);
+}
+
+.flexCard p{
+    font-size: 1rem;
+}
+.flexLeft{
+    display: flex;
+    gap: 0.8em;
+    opacity: 0.8;
+}
+
+
+
+button{
+    border: none;
+    color: white;
+    border-radius: 25px;
+    background-color: var(--Darkgrayblue);
+    font-size: 0.9rem;
+    width: 100%;
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-image: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
+}
+
+span{
+    opacity: 0.3;
+    font-weight: 500;
+}
+
+strong{
+    opacity: 0.7;
+}
