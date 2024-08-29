@@ -91,13 +91,15 @@ body{
 
 main{
     background-color: var(--White);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr ));
+    max-width: 730px;
+
 }
 
 .resultCard{
     background-image: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
-   
+    /* max-width: 430px; */
     color: var(--White);
     border-bottom-left-radius: 1.5rem; 
     border-bottom-right-radius: 1.5rem; 
@@ -146,14 +148,11 @@ main{
 
 .summaryCard{
     padding: 1.5rem;
+    /* max-width: 430px; */
 }
 
 .darkTitle{
     font-size: 1.1rem;
-}
-
-.flexContainer{
-
 }
 
 .flexCard{
@@ -234,4 +233,37 @@ span{
 
 strong{
     opacity: 0.7;
+}
+
+@media (min-width:600px){
+
+
+    body{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    main{
+        box-shadow: 2px ;
+        box-shadow: 28px 28px 50px -5px rgba(0,0,0,0.26);
+        border-radius: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .circle{
+        height: 200px;
+        width: 200px;
+    }
+
+    .bigNumber{
+        font-size: 64px;
+    }
+
+    .resultCard{
+        border-radius: 1.5rem;
+    }
+
 }
